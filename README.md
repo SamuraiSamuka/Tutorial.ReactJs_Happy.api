@@ -1,8 +1,8 @@
-### projeto iniciado
+### Projeto iniciado
 
 `npm init -y`
 
-### Instalar e configurar o express e o typescript
+### Express e typescript instalados e configurados
 
 ```
 npm i express
@@ -11,18 +11,22 @@ npm i typescript -D
 npx tsc --init
 ```
 
-### Configurar o nodeJs para entender ts
+### NodeJs configurar para entender ts
 
 `npm i ts-node-dev -D`
 
-### Configurar comando para rodar o projeto
+### Comando para rodar o projeto configurado
 
 `npm run dev (npx ts-node-dev src/server.ts)`
 
-### Instalar e configurar o banco de dados
+### Banco de dados instalado e configurado
 
-`npm i typeorm sqlite3`
-`npm install reflect-metadata --save` (importar ``import "reflect-metadata"`)
+```
+npm i typeorm sqlite3
+npm install reflect-metadata --save
+```
+
+(importar "reflect-metadata")
 
 #### Tipos de drivers de manipulação de bancos de dados
 

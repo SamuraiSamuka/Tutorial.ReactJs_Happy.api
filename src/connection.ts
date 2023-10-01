@@ -1,10 +1,12 @@
 import "reflect-metadata";
 import { DataSource } from "typeorm";
+import { Orphanages } from "./entity/Orphanages";
 
 export const AppDataSource = new DataSource({
   type: "sqlite",
   database: "database.sqlite",
-  entities: [],
+  entities: [Orphanages],
   subscribers: [],
-  migrations: ["./migrations/*.ts"],
+  migrations: ["src/migrations/*.ts"],
+  synchronize: true,
 });

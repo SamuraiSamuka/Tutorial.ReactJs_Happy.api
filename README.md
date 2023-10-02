@@ -30,9 +30,14 @@ npm install reflect-metadata --save
 
 (importar "reflect-metadata")
 
-### Migration criada
+### Migrations
 
 `npm run typeorm migration:create ./src/migrations/create_orphanages`
+`npm run typeorm migration:run -- -d ./src/connection.ts`
+
+### Upload de imagens
+
+`npm i multer`
 
 ## Anotações
 
@@ -64,3 +69,9 @@ app.post("/users/:id", (req, res) => {
   return res.json({ message: "Hello World 2" });
 });
 ```
+
+### Padrão MVC
+
+- Models - Entities
+- Views - Endpoints
+- Controllers - Lógica das rotas
